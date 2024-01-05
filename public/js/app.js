@@ -66,7 +66,8 @@ function traduzirDescricao(descricao) {
       "thunderstorm": "tempestade",
       "snow": "neve",
       "overcast clouds": "nuvens carregadas",
-      "fog": "névoa"
+      "fog": "névoa",
+      "light rain": "chuva leve"
     };
     return traducoes[descricao.toLowerCase()] || descricao;
 };

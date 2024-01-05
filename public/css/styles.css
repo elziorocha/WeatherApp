@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
 
-/* $border-radius: 20px; */
 body {
     background: linear-gradient(140deg, rgb(115, 176, 199), rgb(74, 107, 119));
     color: #333333;
@@ -19,12 +18,6 @@ body {
     cursor: default;
 }
 
-header {
-    margin-top: 16px;
-    margin-bottom: 48px;
-    text-align: center;
-}
-
 h2 {
     font-size: 64px;
     margin-bottom: 16px;
@@ -35,7 +28,7 @@ h2 {
     top: 50%;
     left: 50%;
     height: 550px;
-    width: 500px;
+    width: 525px;
     transform: translate(-50%, -50%);
     background: linear-gradient(120deg, #47bbff, #2b32b2);
     border: solid 1px #2b32b2;
@@ -70,7 +63,7 @@ h2 {
     align-items: center;
     justify-content: space-around;
     font-size: 100px;
-    color: white
+    color: white;
 }
 
 .widget .weatherIcon i {
@@ -115,7 +108,7 @@ h2 {
 .place {
     text-align: center;
     font-size: 35px;
-    margin-top: 70px;
+    margin-top: 90px;
     color: white;
 }
 
@@ -128,5 +121,42 @@ h2 {
     font-size: 20px;
     margin-top: 20px;
     color: white;
+}
 
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+    .widget {
+        width: 80%;
+        height: 750px;
+    }
+
+    .input-field {
+        margin-top: 20px;
+        width: 50%;
+        font-size: 22px;
+        height: 60px;
+    }
+
+    .weatherLocation button {
+        margin-top: 20px;
+        width: 20%;
+        height: 60px;
+        font-size: 22px;
+    }
+
+    .widget .weatherIcon i {
+        margin-top: 25px;
+        font-size: 150px;
+    }
+
+    .icon-and-weatherInfo {
+        font-size: 34px;
+    }
+    
+    .place {
+        font-size: 46px;
+    }
+
+    .date {
+        font-size: 40px;
+    }
 }
